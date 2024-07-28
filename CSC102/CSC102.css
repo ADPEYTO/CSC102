@@ -1,0 +1,42 @@
+body
+{
+    background-color:cornsilk;
+}
+
+p
+{
+    font-size: 100%;
+    font-style: normal;
+    text-align: left;
+    color: black;
+}
+
+#List1
+{
+    font-size: 100%;
+    font-style: normal;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+#footerLight
+{
+    font-size: 50%;
+    text-align: left;
+    font-weight: lighter;
+}
+
+#footerRight
+{
+    font-size: 50%;
+    text-align: right;
+    font-weight: lighter;    
+}
+
+nav
+{
+    border: 2px;
+    background-color: white;
+    
+}
