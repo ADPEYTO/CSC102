@@ -1,0 +1,67 @@
+body
+{
+    background-image: url(indexBackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: medium;
+}
+
+head
+{
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+}
+
+#grump
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: darkgreen;
+    color: black;
+    font-weight: bold;
+  }
+
+#footerLeft
+{
+    text-align: left;
+}
+
+h3
+{
+    font-weight: bolder;
+    
+}
+
+#objectives
+{
+    background-color: white;
+    font-size: medium;
+    border:2px;
+    border-color: darkgreen;
+}
+
+button
+{
+    background-color: green;
+    color:black;
+    border: 2px;
+    border-radius: 25px;
+    height: 50px;
+    width:100px;
+}
+
+#caption
+{
+    font-size: larger;
+    font-style: italic;
+    font-weight: bolder;
+    color:black;
+}
