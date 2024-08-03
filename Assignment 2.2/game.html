@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css"></link>
+    <script src="game.js"></script>
+</head>
+<body>
+    
+    <h1> litRPG Fantasy Battle</h1>
+    <br><br>
+    <h3>Character Selection</h3>
+<!--  Commenting while working in different languages can be confusing.  This is the button section of the game.-->
+    <center>
+        <button id=buttonFighter onclick="chooseFighter()"> Fighter </button>
+        <button id="buttonRogue" onclick="chooseRogue()"> Rogue </button>
+        <button id="buttonWizard"  onclick="chooseWizard()"> Wizard </button>
+        <br><br>
+        <button id=findEnemy onclick="findEnemy()"> Get Opponent </button>
+        <button id="buttonReset" onclick="startOver()"> Reset </button>
+        <button id="buttonHow" onclick="buttonHow()"> Instructions </button>
+
+      <!-- <p id="readOut"> Selector </p> - used as a check to make sure everything was working-->
+      <br><br>
+      <button id=attack onclick="attack()"> Attack </button>
+    </center>
+<br>
+<!-- Side table to show what character was choosen and the base information.-->
+    <table>
+        <tr>
+            <th>Character</th>
+            <th>Level</th>
+            <th>Health</th>
+        </tr>
+        <!-- Place holders for the character information to be added by JS-->
+        <tr>
+            <td><div id=charType> Choose </div></td>
+            <td><div id="level">1</div></td>
+            <td><div id="health">0</div></td>
+        </tr>
+        <!-- Default image -->
+        <img id="charImage" src="compass.jpg" height="100px" width="100px">
+    </table>
+
+    <!-- Player section of the battle area.  Picture of the character along with the basic "rolls" to verify-->
+        <div id="playerSection">
+            <img id="playerImage" src="compass.jpg" height="200px" width="200px">
+            <br>
+            <div id="playerType"> Player </div>
+            <br>
+            Current Health
+            <br>
+            <div id="pcHealth"> 0 </div>
+            <div id="playerAtkRoll"> 0 </div>
+            <div id="playerDmgRoll"> 0 </div>
+        </div>
+
+        <div id="versus"> - VS - </div>
+
+    <!-- Enemy SEction same as the character section above -->
+        <div id="enemySection">
+            <img id="enemyImage" src="compass.jpg" height="200px" width="200px">
+            <br>
+            <div id="enemyType"> Opponent </div>
+            <br>
+            Current Health
+            <br>
+            <div id="ecHealth"> 0 </div>
+            <div id="enemyAtkRoll"> 0 </div>
+            <div id="enemyDmgRoll"> 0 </div>
+
+        </div>
+   
+
+    
+        <!-- I tried using a table but that did not work out for me format wise.  On hindsight it was not a very good idea.
+            I wanted the background of the table to be clear and it just would not work.  Function wise it was fine, but looked bad.
+            
+        <center>
+        <table id="gameSection">
+            <tr>
+                <th>
+                    <img id="playerImage" src="compass.jpg" height="200px" width="200px">
+                </th>
+                <th>
+                    VS
+                </th>
+                <th>
+                   <img id="enemyImage" src="compass.jpg" height="200px" width="200px">
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div id="playerType"> Player </div>
+                </td>
+                <td>
+                    VS
+                </td>
+                <td>
+                    <div id="enemyType"> Enemy </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Current Health
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    Current Health
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="pcHealth"> 0 </div>
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <div id="ecHealth"> 0 </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="playerAtkRoll"> 0 </div>
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <div id="enemyAtkRoll"> 0 </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="playerDmgRoll"> 0 </div>
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <div id="enemyDmgRoll"> 0 </div>
+                </td>
+            </tr>
+            
+        </table>
+        </center>
+        -->
+     <br><br><br>
+
+     <footer>
+        Copyright 2024 adp
+     </footer>
+
+</body>
+</html>
