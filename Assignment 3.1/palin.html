@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Allen Peyton
+        Assignment 3.2 Palindrome Checker -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palin Check</title>
+    <link rel="stylesheet" href="palin.css"></link>
+    <script src="palin.js"></script>
+</head>
+<body>
+    <!-- Centered form and paragraphs to form the page.  Spent to much time trying to get the video to work.-->
+    <center>
+        <h3> Palindrome Checker</h3>
+        <h4> Input a String</h4>
+        <!--  Must have the "return false"-->
+        <form  onsubmit = "return false">
+            <input type="text" id="inputString"/>
+            <input id="subButton" type="submit"  onclick="palinCheck();"/>
+       
+        </form>
+    
+   <p id="results"> Palindrome Results</p>
+   <br>
+   <!--  THis is where the results response will live.-->
+   <p id="isIt"> The actual Results</p>
+        <br><br>
+    <!-- Tried to add a little video.  MP4 icluded in file.  I could not figure out how to make it play when the palindrome was detected.
+        <p id="backgroundSection">
+        <video id="fireworkVid" width="400" height="300">
+            <source src="fireworks2.mp4"/>
+        </video>
+    </p>
+    -->
+</center>
+   <footer>
+       <!-- Unused gif removed the credits. <a href="https://www.vecteezy.com/free-videos/fireworks-gif">Fireworks Gif by Vecteezy</a> -->
+   </footer>
+</body>
+</html>
