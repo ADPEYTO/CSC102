@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Allen Peyton Assingment 4.1 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Image</title>
+    <link rel="stylesheet"  href="Index.css"></link>
+    <script src="Index.js"></script>
+
+</head>
+<body>
+    <!-- Button to start image moving -->
+    <button id = "start" onclick="start();"> Start </button>
+    <!-- Button to stop image and reset the the coordinates to the default location-->
+    <button id = "stop" onclick="stop();" disabled="true"> Stop </button>
+    <!-- Image for the page. -->
+    <img src="dvdLogo.png" id="dvdLogo" style="position:absolute; left: 100px; top: 100px; width: 200px;"/>
+
+    <!-- Place to add text -->
+    <p id="coord"></p>
+    <!-- Object to put a box around the bouncing area -->
+    <canvas id="myCanvas" width="890px" height="390px" style="position: absolute; left: 100px; top: 100px"> 
+    </canvas>
+</body>
+</html>

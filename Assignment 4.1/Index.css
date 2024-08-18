@@ -1,0 +1,27 @@
+
+
+button
+{
+    width: 100px;
+    height: 50 px;
+    font-family: monospace;
+    background-color: cornflowerblue;
+    border-radius: 25px;
+}
+
+#myCanvas
+{
+    border: 5px solid black;
+}
+
+body
+{
+    background-color: wheat;
+}
+
+#coord
+{
+    font-size: larger;
+    font-weight: bold;
+    font-family: cursive;
+}
