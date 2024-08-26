@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!-- Allen Peyton CSC102 Assignment 5.1-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <link rel="stylesheet" href="home.css"></link>
+    <script src="home.js"></script>
+</head>
+<body>
+    <header id="classHeader">
+        <!-- School logo because this is a required page for the class.-->
+        <img src="uat.jpg" style="width: 75px; height: 100px;" id="uatLogo"/>
+        <!-- Nav area with the links below.-->
+        <ul id="classUl">
+            <li><a href="palindrome.html">Palindrome</a></li>
+            <li><a href="applications.html">Applications</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="Home.html">Home</a></li>
+        </ul>
+    </header>
+    <br><br>
+    <!-- Form to enter string for the palin check-->
+    <center>
+        <form onsubmit="return false">
+            <label id="palinEnter" for="inputString">Enter String Here</label><br><br>
+            <input type="text" id="inputString"/><br><br>
+            <input type="submit" id="palinButton" onclick="palinCheck()"/>
+        </form>
+        <br><br>
+       <!-- <img src="loading.webp" id="file" style="display:none;"/> -->
+        <p id="results" style="display: none;"></p>
+        <p id="isIt" style="display: none;"></p>
+
+    </center>
+    <footer>
+        
+        <p> Allen Peyton - CSC102<br>
+            University of Advancing Technologies<br>
+            2625 W. Baseline Rd.<br>
+            Tempe, AZ 85283-1056<br>
+        </p>
+        
+    </footer> 
+    
+</body>
+</html>
